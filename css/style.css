@@ -18,7 +18,7 @@ Fonts
 
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway-Regular.eot');
+    src: url('../fonts/Raleway-Regular.eot');
     src: local('Raleway'), local('Raleway-Regular'),
     url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Raleway-Regular.woff2') format('woff2'),
@@ -67,15 +67,21 @@ General and Layout
     padding:0;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-.column{
+.left{
     float: left;
+    text-align: left;
+}
+.right{
+    float: right;
+    text-align: right;
 }
 .container {
     margin: 0 auto;
-    width: 920px;
+    width: 1200px;
+    border: 1px solid red;
 }
 .col-2-layout::after,
 .col-3-layout::after{
@@ -97,4 +103,39 @@ img {
 
 span.green{
     color: #27C7AB;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------
+
+Site Header
+
+---------------------------------------------------------*/
+.site-header{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+ul.basic-nav li{
+    display: inline;
+}
+.site-header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+.site-header span{
+    display: inline-block;
+
+}
+.site-header .logo,
+.basic-nav{
+    padding: 15px 0 9px 0;
+    margin-right: 60px;
+    letter-spacing: 0.012em;
+    margin-left: 67px;
 }
