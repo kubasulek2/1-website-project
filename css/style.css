@@ -93,7 +93,8 @@ body{
 }
 .col-2-layout::after,
 .col-3-layout::after,
-.col-2-layout-b::after{
+.col-2-layout-b::after,
+.col-2-layout-c::after{
     content:"";
     clear: both;
     display: block;
@@ -109,6 +110,12 @@ body{
 }
 .col-2-layout-b .column-right {
     width: 60%;
+}
+.col-2-layout-c .column-right{
+    width: 33.34%;
+}
+.col-2-layout-c .column-left{
+    width: 66.66%;
 }
 
 img.site-pictures {
@@ -129,6 +136,9 @@ a.white{
 span.green{
     color: #27C7AB;
     font-weight: bold;
+}
+button.green{
+    background-color: #27C7AB;
 }
 .site-header,
 .site-black-chair,
@@ -319,7 +329,7 @@ Site Tariff
     padding-top: 50px;
     padding-bottom: 90px;
 }
-.tariff{
+.title{
     color: #484848;
     text-transform: uppercase;
     font-size: 20px;
@@ -451,15 +461,28 @@ Site Tariff
     background-color: #27C7AB;
 }
 
-/*
-zielona tabelka: odd: ffffff even:f1f1f1 litery 959595 */
-
-
 /*-------------------------------------------------------------------
 
 Site Form
 
 -------------------------------------------------------------------*/
+.site-form{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.site-form .green-bar{
+    width: 30%;
+    margin-bottom: 40px;
+}
+.site-form label{
+    display: block;
+}
+.site-form .column-right{
+    text-align: center;
+}
+.site-form textarea{
+    resize: none;
+}
 
 /*-------------------------------------------------------------------
 
@@ -474,12 +497,13 @@ Site Footer
     display: inline-block;
     padding-top: 12px;
 }
-.site-footer.logo{
+.site-footer .logo{
     font-size: 20px;
     display: inline-block;
     margin-left: 4em;
     padding-top: 9px;
 }
+
 
 
 
