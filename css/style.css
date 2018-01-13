@@ -288,6 +288,28 @@ Site Pictures
 .margarita{
     left: 11px;
 }
+.box :first-child{
+    font-weight: 600;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.box article{
+    font-size: 15px;
+    color: #5a5a5a;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+
+}
+.box article:last-child{
+
+}
+.box .green-bar{
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+
 
 
 
