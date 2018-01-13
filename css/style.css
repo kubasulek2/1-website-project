@@ -106,6 +106,9 @@ body{
 img.site-pictures {
     max-width: 100%;
 }
+a{
+    text-decoration: none;
+}
 a.green{
     background-color: #27C7AB;
     color: white;
@@ -148,7 +151,7 @@ ul.basic-nav li{
 }
 .site-header a {
     color: #fff;
-    text-decoration: none;
+
     margin: 0 20px;
     font-weight: bold;
 }
@@ -189,6 +192,10 @@ Section Black Chair
 .column-right.right *{
     text-align: center;
 }
+.column-left.left,
+.column-right.right{
+    position: relative;
+}
 .wrapper{
     height: 500px;
     width: 500px;
@@ -205,8 +212,8 @@ Section Black Chair
 .site-black-chair article{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 60px;
-    max-width: 450px;
+    padding-bottom: 40px;
+    max-width: 400px;
     display: inline-block;
 }
 .button-see{
@@ -214,6 +221,19 @@ Section Black Chair
     border-radius: 10px;
     padding: 10px 30px;
     font-size: 25px;
-    text-decoration: none;
 }
+.nav-sign-left a,
+.nav-sign-right a{
+    color: #27C7AB;
+}
+.nav-sign-right,
+.nav-sign-left {
+    position: absolute;
+    font-size: 100px;
+    top: 190px;
+}
+.nav-sign-right{
+    right: 0;
+}
+
 
