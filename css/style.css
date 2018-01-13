@@ -240,6 +240,19 @@ Section Black Chair
 Site Pictures
 
 -------------------------------------------------------------------*/
+.site-pictures .column{
+    margin: 0 auto;
+    text-align: center;
+}
+.site-pictures .box{
+    width: 329px;
+    height: 250px;
+    border: 1px solid #afafaf;
+
+}
+.site-pictures .container{
+    margin-top: 35px;
+}
 
 /*-------------------------------------------------------------------
 
@@ -259,7 +272,7 @@ Site Footer
 
 -------------------------------------------------------------------*/
 .site-footer{
-    color: #a5a4aC;
+    color: #7f7f7f;
     margin: auto;
 }
 .copyright{
