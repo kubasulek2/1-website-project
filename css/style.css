@@ -55,6 +55,7 @@ Fonts
     font-style: normal;
 }
 
+
 /*-----------------------------------------------------------
 
 General and Layout
@@ -78,10 +79,17 @@ body{
     float: right;
     text-align: right;
 }
+.middle{
+    float: left;
+    text-align: center;
+}
 .container {
     margin: 0 auto;
-    width: 1055px;
+    width: 1075px;
     border: 1px solid red;
+    max-width: 110%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .col-2-layout::after,
 .col-3-layout::after,
@@ -143,7 +151,7 @@ Site Header
     background-color: #000;
     color: white;
     font-size: 14px;
-
+    font-weight: 600;
 }
 
 ul.basic-nav li{
@@ -152,11 +160,14 @@ ul.basic-nav li{
 .site-header a {
     color: #fff;
 
-    margin: 0 20px;
+    margin: 0 42px;
     font-weight: bold;
 }
 .site-header a:last-child{
-    margin-right: 0px;
+    margin-right: 0;
+}
+.site-header:first-child{
+    margin-left: 0;
 }
 
 .site-header span{
@@ -164,7 +175,7 @@ ul.basic-nav li{
 
 }
 .site-header .logo,
-.basic-nav{
+.basic-nav {
     padding: 15px 0 9px 0;
     letter-spacing: 0.012em;
 }
@@ -229,7 +240,7 @@ Section Black Chair
 .nav-sign-right,
 .nav-sign-left {
     position: absolute;
-    font-size: 100px;
+    font-size: 80px;
     top: 190px;
 }
 .nav-sign-right{
@@ -240,19 +251,45 @@ Section Black Chair
 Site Pictures
 
 -------------------------------------------------------------------*/
-.site-pictures .column{
-    margin: 0 auto;
-    text-align: center;
-}
+
 .site-pictures .box{
     width: 329px;
     height: 250px;
     border: 1px solid #afafaf;
-
+    display: inline-block;
+    text-align: left;
 }
 .site-pictures .container{
     margin-top: 35px;
+    margin-bottom: 60px;
+
 }
+.site-pictures .column{
+    position: relative;
+}
+.stripe {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 329px;
+    height: 55px;
+    bottom: 17px;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.green-bar{
+    width: 160px;
+    height: 7px;
+    display: block;
+    background-color: #27C7AB;
+}
+
+.margarita{
+    left: 11px;
+}
+
+
 
 /*-------------------------------------------------------------------
 
@@ -279,7 +316,7 @@ Site Footer
     display: inline-block;
     padding-top: 12px;
 }
-.logo{
+.site-footer.logo{
     font-size: 20px;
     display: inline-block;
     margin-left: 4em;
