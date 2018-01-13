@@ -67,7 +67,7 @@ General and Layout
     margin: 0;
     padding:0;
 }
-body{
+body *{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -86,7 +86,6 @@ body{
 .container {
     margin: 0 auto;
     width: 1075px;
-    border: 1px solid red;
     max-width: 110%;
     padding-left: 10px;
     padding-right: 10px;
@@ -112,10 +111,10 @@ body{
     width: 60%;
 }
 .col-2-layout-c .column-right{
-    width: 33.34%;
+    width: 40%;
 }
 .col-2-layout-c .column-left{
-    width: 66.66%;
+    width: 60%;
 }
 
 img.site-pictures {
@@ -124,7 +123,8 @@ img.site-pictures {
 a{
     text-decoration: none;
 }
-a.green{
+a.green,
+button.green{
     background-color: #27C7AB;
     color: white;
 }
@@ -150,6 +150,8 @@ button.green{
 .upper{
     text-transform: uppercase;
 }
+
+
 
 
 /*-----------------------------------------------------------
@@ -210,12 +212,13 @@ Section Black Chair
     width: 550px;
     height: auto;
 }
-.column-right.right *{
-    text-align: center;
-}
+
 .column-left.left,
 .column-right.right{
     position: relative;
+}
+.site-black-chair .column-right.right *{
+    text-align: center;
 }
 .wrapper{
     height: 500px;
@@ -277,6 +280,7 @@ Site Pictures
 .site-pictures .column{
     position: relative;
 }
+
 .stripe {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
@@ -468,7 +472,7 @@ Site Form
 -------------------------------------------------------------------*/
 .site-form{
     margin-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 .site-form .green-bar{
     width: 30%;
@@ -477,12 +481,69 @@ Site Form
 .site-form label{
     display: block;
 }
-.site-form .column-right{
-    text-align: center;
+.site-form .column-right.right{
+    text-align: left;
 }
-.site-form textarea{
+
+.site-form .form-standard {
+    width: 90%;
+    height: 65px;
+    border: 1px solid #27C7AB;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 10px 15px;
+}
+.site-form textarea.form-standard{
+    height: 190px;
     resize: none;
 }
+.site-form img{
+    margin-right: 130px;
+    margin-bottom: 25px;
+}
+span.checkbox{
+    color: #9f9f9f;
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 40px;
+    width: 350px;
+}
+.submit{
+    border: none;
+    border-radius: 10px;
+    padding: 14px 100px;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 37px;
+
+}
+
+input:focus,
+textarea:focus{
+    box-shadow: 5px 5px 5px #c1c1c1;
+    outline: 0;
+}
+::-webkit-input-placeholder {
+    color: #5a5a5a;
+    opacity: 0.3;
+}
+::-moz-placeholder {
+    color: #5a5a5a;
+    opacity: 0.3;
+}
+:-ms-input-placeholder {
+    color: #5a5a5a;
+    opacity: 0.3;
+}
+:-moz-placeholder {
+    color: #5a5a5a;
+    opacity: 0.3;
+}
+.submit:hover{
+    cursor: pointer;
+}
+
 
 /*-------------------------------------------------------------------
 
@@ -503,6 +564,7 @@ Site Footer
     margin-left: 4em;
     padding-top: 9px;
 }
+
 
 
 
