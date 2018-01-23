@@ -123,6 +123,10 @@ img.site-pictures {
 a{
     text-decoration: none;
 }
+
+.link:hover{
+    box-shadow: 3px 3px 6px #5a5a5a;
+}
 a.green,
 button.green{
     background-color: #27C7AB;
