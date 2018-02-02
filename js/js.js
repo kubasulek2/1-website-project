@@ -36,3 +36,21 @@ menu.addEventListener("mouseover", function () {
 menu.querySelector("ul").addEventListener("mouseout", function () {
     this.style.display = "none"
 })
+
+
+var chairs = document.querySelectorAll(".chair-pictures");
+console.log(chairs);
+
+for (var i = 0; i < chairs.length; i++){
+    chairs[i].addEventListener("mouseover", function () {
+        var self = this;
+        setTimeout(function () {
+            self.nextElementSibling.style.display = "none"
+        },250)
+    })
+}
+for (var i = 0; i < chairs.length; i++){
+    chairs[i].addEventListener("mouseout", function () {
+        this.nextElementSibling.style.display = "block"
+    })
+}

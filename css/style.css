@@ -335,7 +335,8 @@ Site Pictures
     padding-top: 15px;
     padding-left: 10px;
 }
-.green-bar{
+.stripe:after{
+    content: "";
     width: 160px;
     height: 7px;
     display: block;
@@ -361,9 +362,14 @@ Site Pictures
 .box article:last-child{
 
 }
-.box .green-bar{
-    margin-left: 20px;
+.box>div:after{
+
     margin-bottom: 12px;
+    content: "";
+    width: 160px;
+    height: 7px;
+    display: block;
+    background-color: #27C7AB;
 }
 
 /*-------------------------------------------------------------------
@@ -382,7 +388,11 @@ Site Tariff
     font-size: 20px;
     letter-spacing: 0.012em;
 }
-.site-tariff .green-bar{
+.title:after{
+    content: "";
+    height: 7px;
+    display: block;
+    background-color: #27C7AB;
     width: 30%;
     margin-bottom: 75px;
 }
@@ -552,6 +562,13 @@ span.checkbox{
     padding-right: 40px;
     width: 350px;
 }
+
+input.checkbox{
+    width: 45px;
+    height: 45px;
+    color: #27C7AB;
+    border: 1px solid #27C7AB;
+}
 .submit{
     border: none;
     border-radius: 10px;
@@ -562,7 +579,7 @@ span.checkbox{
 
 }
 
-input:focus,
+input:focus:not([type="checkbox"]),
 textarea:focus{
     box-shadow: 5px 5px 5px #c1c1c1;
     outline: 0;
