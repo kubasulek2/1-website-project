@@ -67,7 +67,7 @@ General and Layout
     margin: 0;
     padding:0;
 }
-body *{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -158,6 +158,7 @@ button.green{
 
 
 
+
 /*-----------------------------------------------------------
 
 Site Header
@@ -169,21 +170,54 @@ Site Header
     font-size: 14px;
     font-weight: 600;
 }
+.site-header ul{
+    list-style: none;
+}
 
-ul.basic-nav li{
-    display: inline;
+ul.basic-nav>li{
+    display: inline-block;
+    position: relative;
+}
+
+ul.basic-nav>li>ul {
+    display: none;
+    position: absolute;
+    background: black;
+    top: 40px;
+    left: 35px;
+    z-index: 1;
+    padding: 10px 10px;
+}
+
+ul.basic-nav>li>ul:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: black;
+    transform: rotate(45deg);
+    top: -6px;
+    left: 35px;
+}
+
+ul.basic-nav>li>ul>li{
+    text-align: left;
+    padding-bottom: 15px;
+
+}
+ul.basic-nav>li>ul>li:last-child{
+    padding-bottom: 0;
+
+}
+ul.basic-nav>li>ul>li a{
+    margin-left: 0;
+    margin-right: 20px;
 }
 .site-header a {
     color: #fff;
 
-    margin: 0 42px;
-    font-weight: bold;
-}
-.site-header a:last-child{
-    margin-right: 0;
-}
-.site-header:first-child{
-    margin-left: 0;
+    margin: 0 0 0 42px;
 }
 
 .site-header span{
@@ -211,10 +245,15 @@ Section Black Chair
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#c9c3c9', GradientType=0 );
 }
 
-.black-chair{
+
+.site-black-chair img{
+    display: none;
+}
+.site-black-chair .visible{
     padding-top: 80px;
     width: 550px;
-    height: auto;
+    height: 475px;
+    display: inline-block;
 }
 
 .column-left.left,
