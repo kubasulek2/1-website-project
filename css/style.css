@@ -797,20 +797,64 @@ Site Form
     margin-right: 130px;
     margin-bottom: 25px;
 }
+
+.term-agree{
+    position: relative;
+    //margin-bottom: 30px;
+    padding: 30px 30px 30px 0;
+}
 span.checkbox{
     color: #9f9f9f;
     font-size: 20px;
-    display: inline-block;
-    padding-right: 40px;
+    display: block;
     width: 350px;
+    position:absolute;
+    left: 55px;
+    top: -28px;
 }
 
-input.checkbox{
-    width: 45px;
-    height: 45px;
-    color: #27C7AB;
-    border: 1px solid #27C7AB;
+.term-agree input{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
+.term-agree label{
+    display: block;
+    position: relative;
+}
+
+
+
+
+.term-agree label::before, .term-agree label::after {
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 0;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    top: 0;
+}
+.term-agree label::after {
+    background: url('../images/form_ok.jpg') no-repeat center;
+    border: 0;
+    display: none;
+}
+
+.term-agree input:checked + label::after {
+    display: block;
+}
+
+
+
+
+
+
+
 .submit{
     border: none;
     border-radius: 10px;
